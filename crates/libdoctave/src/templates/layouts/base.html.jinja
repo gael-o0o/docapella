@@ -74,7 +74,7 @@
     {% for custom_css in project.custom_css %}
       <!-- prettier-ignore-start -->
       <style>
-        {{ custom_css }}
+        {{ custom_css | safe }}
       </style>
       <!-- prettier-ignore-end -->
     {% endfor %}
