@@ -216,7 +216,7 @@
         <div class="open-api-schema">
           <div class="open-api-schema-attributes-top">
             <code class="schema-name">{{ requirement.data.name }}</code>
-            <span class="schema-type">
+            <code class="schema-type">
               {%- if requirement.kind == "http" -%}
                 HTTP {{ requirement.data.scheme|capitalize }}
               {%- elif requirement.kind == "api_key" -%}
@@ -226,7 +226,7 @@
               {%- elif requirement.kind == "open_i_d" -%}
                 OpenID Connect
               {%- endif -%}
-            </span>
+            </code>
           </div>
 
           {% if requirement.data.description_ast %}
