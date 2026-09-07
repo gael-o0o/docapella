@@ -53,6 +53,12 @@ header .header-mobile-buttons {
   gap: var(--space-2);
 }
 
+@media (min-width: 1024px) {
+  header .header-mobile-buttons {
+    display: none;
+  }
+}
+
 .header-button {
   display: flex;
   align-items: center;
