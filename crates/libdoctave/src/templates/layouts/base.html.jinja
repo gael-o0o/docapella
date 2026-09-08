@@ -41,7 +41,7 @@
 
     {# Favicon #}
     {% if project.settings.theme.favicon %}
-      <link rel="icon" href="/{{ project.settings.theme.favicon.src }}" />
+      <link rel="icon" href="{{ project.settings.theme.favicon.src }}" />
     {% endif %}
 
     {% include "js/dark-mode-preload.html.jinja" %}
